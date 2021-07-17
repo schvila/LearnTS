@@ -6,5 +6,5 @@ class Person{
     }
 }
 let p = new Person();
-p.name = 'John2';
+p.name = 'John3';
 p.sayHello();
