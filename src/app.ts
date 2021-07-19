@@ -1,10 +1,11 @@
-class Person{
-    name = 'Stan1';
-    age = 57;
-    sayHello(){
-        console.log(`Hello ${this.name} aged ${this.age}`);
-    }
-}
-let p = new Person();
-p.name = 'John3';
-p.sayHello();
+import PersonTest from "./persontest";
+import gettersetter from "./department";
+import ITestable from "./itestable";
+import stattest from "./statictest";
+
+let tests: ITestable[] = [new PersonTest(), gettersetter, stattest];
+tests.forEach((test) => {
+  console.log("--------------------------------------");
+  console.log(`Runing test '${test.name}'`);
+  test.Run();
+});
