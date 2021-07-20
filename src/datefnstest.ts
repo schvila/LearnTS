@@ -3,7 +3,6 @@ import ITestable from "./itestable";
 
 import { format, add, parseJSON } from "date-fns";
 
-
 class DateFnsTest implements ITestable {
   name = "date-fns library";
   Run() {
@@ -12,9 +11,9 @@ class DateFnsTest implements ITestable {
     console.log(format(d, "dd.M.yyyy"));
 
     let d1 = Date.now();
-    let d2 = add(d1{
-        years:2,
-        weeks:1,
+    let d2 = add(d1, {
+      years: 2,
+      weeks: 1,
     });
     console.log(JSON.stringify(d2));
     // console.log(format(d2, "dd.M.yyyy"));

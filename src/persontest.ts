@@ -1,4 +1,5 @@
 import Module from "module";
+import ITestable from "./itestable";
 
 class Person {
   // name = 'Stan1';
